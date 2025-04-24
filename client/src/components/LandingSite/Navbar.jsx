@@ -5,7 +5,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const mobileMenuStyles = `flex-col absolute top-0 left-0 w-full h-full bg-neutral px-10 bg-black py-40 text-5xl font-bold`;
   return (
-    <nav className="fixed top-0 w-full flex align-center p-2 justify-between backdrop-blur-2xl text-white px-10">
+    <nav className="fixed top-0 w-full hidden md:flex align-center p-2 justify-between backdrop-blur-2xl text-white px-10">
       <Link to="/" className="flex z-10 md:py-3 font-bold text-4xl">
         <RiGraduationCapFill size={40} color='white' />&nbsp;
         <h1>Hostel<span className="text-yellow-500">Hive</span></h1>
