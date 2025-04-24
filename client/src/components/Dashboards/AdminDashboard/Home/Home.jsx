@@ -157,7 +157,7 @@ function Home() {
     </ResponsiveContainer>
   );
   return (
-    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center max-h-screen overflow-x-hidden overflow-y-auto pt-[400px] sm:pt-96 md:pt-96 lg:pt-80 xl:pt-20">
+    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center max-h-screen overflow-x-hidden overflow-y-auto pt-20">
       <h1 className="text-white font-bold text-5xl text-center">
         Welcome <span className="text-blue-500">{admin.name || "admin"}!</span>
       </h1>

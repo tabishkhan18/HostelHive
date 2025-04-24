@@ -5,6 +5,7 @@ import { verifysession } from "../../../utils/";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Loader } from "../../Dashboards/Common/Loader";
+import Card from "../../Dashboards/StudentDashboard/Card";
 export default function SignIn() {
   let navigate = useNavigate();
   if (localStorage.getItem("token")) {
@@ -144,6 +145,9 @@ export default function SignIn() {
             </Link>
           </p>
         </form>
+      </div>
+      <div className="animate-pulse hover:animate-none flex items-center justify-center w-full xl:w-0 xl:absolute right-52 top-60">
+        <Card/>
       </div>
     </div>
   );

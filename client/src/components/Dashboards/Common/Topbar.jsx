@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import { RiGraduationCapFill } from "react-icons/ri";
 
 Topbar.propTypes = {
   name: PropTypes.string,
@@ -30,10 +31,13 @@ function Topbar({ name, notifications }) {
   }, []);
 
   return (
-    <div className="py-5 px-5 flex items-center justify-between text-white w-full bg-black shadow-lg absolute top-0 md:w-[83.3vw] md:ml-[16.7vw]">
-      {date.toLocaleTimeString()}
+    <div className="py-5 px-5 flex items-center justify-between text-white w-full bg-neutral-800 shadow-lg absolute top-0 right-0">
+      <h1 className="flex gap-2 text-xl items-center">
+      <RiGraduationCapFill size={30} color='white' />Dashboard
+      </h1>
       <span>{name}</span>
       <div className="flex gap-3">
+      {date.toLocaleTimeString()}
         <Link to="settings">
           <svg
             xmlns="http://www.w3.org/2000/svg"

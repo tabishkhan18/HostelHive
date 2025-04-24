@@ -55,7 +55,7 @@ function Suggestions() {
       <form
         method="POST"
         onSubmit={registerSuggestions}
-        className="md:w-[30vw] w-full py-5 pb-7 px-10 bg-neutral-950 rounded-lg shadow-xl flex flex-col gap-5"
+        className="py-5 pb-7 px-10 md:w-96 w-full bg-neutral-950 rounded-lg shadow-xl flex flex-col gap-5"
       >
         <Input field={suggestionTitle} />
         <div>

@@ -75,13 +75,8 @@ function Sidebar({ links }) {
           isOpen ? "translate-x-0" : "absolute -translate-x-full"
         }`}
       >
-        <div
-          className="py-4 px-4 md:py-5 lg:py-4 gap-2 bg-neutral-900 flex items-center text-2xl"
-        >
-          <RiGraduationCapFill size={30} color='white' />&nbsp;
-          <span className="md:hidden lg:inline">Dashboard</span>
-        </div>
-        <div className="flex flex-col space-y-1 text-2xl text-white">
+        
+        <div className="flex flex-col mt-32 space-y-1 text-2xl text-white">
           {/*eslint-disable-next-line react/prop-types*/}
           {links.map((link) => (
             <Link

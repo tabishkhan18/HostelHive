@@ -147,7 +147,7 @@ function Home() {
   totalDays = totalDays.getDate();
   const [daysOff, setDaysOff] = useState(0); //!Fetch from database
   return (
-    <div className="w-full h-screen flex items-center justify-center flex-col gap-5 max-h-screen overflow-y-auto pt-64 lg:pt-0 md:pt-64 sm:pt-96">
+    <div className="w-full h-screen flex items-center justify-center flex-col gap-5 max-h-screen overflow-y-auto">
       <h1 className="text-white font-bold text-5xl text-center">
         Welcome <span className="text-blue-500">{student.name}!</span>
       </h1>

@@ -1,6 +1,5 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/LandingSite/About/index";
 import LandingSite from "./components/LandingSite/Index";
 import LandingPage from "./components/LandingSite/LandingPage/index"
 import Auth from "./components/LandingSite/AuthPage/Index";
@@ -31,7 +30,6 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingSite />}>
           <Route index element={<LandingPage />} />
-          <Route path="about" element={<About />} />
           <Route path="auth" element={<Auth />}>
             <Route index element={<SignIn />} />
             <Route path="login" element={<SignIn />} />
